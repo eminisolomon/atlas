@@ -36,6 +36,14 @@
     "geography",
     "data"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinnovations/atlas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xinnovations/atlas/issues"
+  },
+  "homepage": "https://github.com/xinnovations/atlas#readme",
   "author": "Solomon Olatunji (@eminisolomon) - Nigeria",
   "license": "MIT",
   "devDependencies": {
