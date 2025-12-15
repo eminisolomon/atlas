@@ -28,5 +28,11 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/xinnovations/atlas" },
     ],
+
+    footer: {
+      message: "Released under the MIT License.",
+      copyright:
+        "Copyright © 2025 Solomon Olatunji - Made with ❤️ in Nigeria 🇳🇬",
+    },
   },
 });

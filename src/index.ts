@@ -1,10 +1,10 @@
-import { locationData } from "./countryData";
+import { locationData } from './countryData';
 import {
   Country,
   State,
   CitySearchResult,
   StateSearchResult,
-} from "./interface";
+} from './interface';
 
 /**
  * Normalize input string to lowercase and trim whitespace
@@ -31,7 +31,7 @@ export function getCountries(): Country[] {
 export function getCountry(name: string): Country | undefined {
   const normalizedName = normalize(name);
   return (locationData as Country[]).find(
-    (c) => normalize(c.name) === normalizedName
+    c => normalize(c.name) === normalizedName
   );
 }
 
@@ -59,7 +59,7 @@ export function getState(
   if (!country) return undefined;
 
   const normalizedStateName = normalize(stateName);
-  return country.states.find((s) => normalize(s.name) === normalizedStateName);
+  return country.states.find(s => normalize(s.name) === normalizedStateName);
 }
 
 /**
@@ -84,7 +84,7 @@ export function getCities(
 export function searchCountries(query: string): Country[] {
   if (!query) return [];
   const normalizedQuery = normalize(query);
-  return (locationData as Country[]).filter((c) =>
+  return (locationData as Country[]).filter(c =>
     normalize(c.name).includes(normalizedQuery)
   );
 }
@@ -99,8 +99,8 @@ export function searchStates(query: string): StateSearchResult[] {
   const normalizedQuery = normalize(query);
   const results: StateSearchResult[] = [];
 
-  (locationData as Country[]).forEach((country) => {
-    country.states.forEach((state) => {
+  (locationData as Country[]).forEach(country => {
+    country.states.forEach(state => {
       if (normalize(state.name).includes(normalizedQuery)) {
         results.push({
           country: country.name,
@@ -123,9 +123,9 @@ export function searchCities(query: string): CitySearchResult[] {
   const normalizedQuery = normalize(query);
   const results: CitySearchResult[] = [];
 
-  (locationData as Country[]).forEach((country) => {
-    country.states.forEach((state) => {
-      state.cities.forEach((city) => {
+  (locationData as Country[]).forEach(country => {
+    country.states.forEach(state => {
+      state.cities.forEach(city => {
         if (normalize(city).includes(normalizedQuery)) {
           results.push({
             country: country.name,
@@ -145,4 +145,4 @@ export {
   State,
   CitySearchResult,
   StateSearchResult,
-} from "./interface";
+} from './interface';

@@ -22,18 +22,18 @@ npm install @xinnovations/atlas
 ## Quick Start
 
 ```typescript
-import { getStates, getCities, searchCountries } from "@xinnovations/atlas";
+import { getStates, getCities, searchCountries } from '@xinnovations/atlas';
 
 // Get states for a country
-const states = getStates("United States");
+const states = getStates('United States');
 console.log(states);
 
 // Get cities for a state
-const cities = getCities("Nigeria", "Lagos");
+const cities = getCities('Nigeria', 'Lagos');
 console.log(cities); // ['Ikeja', 'Lekki', ...]
 
 // Search for a country
-const results = searchCountries("united");
+const results = searchCountries('united');
 console.log(results);
 ```
 
@@ -56,15 +56,15 @@ console.log(results);
 ## TypeScript Support
 
 ```typescript
-import type { Country, State } from "@xinnovations/atlas";
+import type { Country, State } from '@xinnovations/atlas';
 
-const country: Country | undefined = getCountry("Canada");
+const country: Country | undefined = getCountry('Canada');
 ```
 
 ## License
 
-MIT © [XInnovations]
+MIT © [Solomon Olatunji](https://github.com/eminisolomon)
 
 ---
 
-**Made with ❤️ for the World** 🌍
+**Made with ❤️ in Nigeria** 🇳🇬 **for the World** 🌍

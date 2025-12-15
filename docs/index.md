@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "@xinnovations/atlas"
+  name: '@xinnovations/atlas'
   text: World Location Data
   tagline: Complete data for countries, states, and cities with zero dependencies
   actions:
@@ -45,19 +45,19 @@ features:
 ## Quick Example
 
 ```typescript
-import { getStates, getCities, searchCountries } from "@xinnovations/atlas";
+import { getStates, getCities, searchCountries } from '@xinnovations/atlas';
 
 // Get states for a country
-const states = getStates("United States");
+const states = getStates('United States');
 console.log(states);
 
 // Get cities for a state
-const cities = getCities("Nigeria", "Lagos");
+const cities = getCities('Nigeria', 'Lagos');
 console.log(cities); // ['Apapa', 'Ikeja', ...]
 
 // Search for countries
-const results = searchCountries("united");
-console.log(results.map((c) => c.name));
+const results = searchCountries('united');
+console.log(results.map(c => c.name));
 // ['United Arab Emirates', 'United Kingdom', 'United States', ...]
 ```
 
@@ -97,4 +97,8 @@ pnpm add @xinnovations/atlas
 
 ## License
 
-MIT © XInnovations
+MIT © [Solomon Olatunji](https://github.com/eminisolomon)
+
+---
+
+**Made with ❤️ in Nigeria 🇳🇬 for the World 🌍**

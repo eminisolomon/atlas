@@ -38,7 +38,7 @@ function getCountry(name: string): Country | undefined;
 **Example:**
 
 ```typescript
-const nigeria = getCountry("Nigeria");
+const nigeria = getCountry('Nigeria');
 console.log(nigeria?.currency); // 'NGN'
 console.log(nigeria?.emoji); // '🇳🇬'
 ```
@@ -62,7 +62,7 @@ function getStates(countryName: string): State[] | undefined;
 **Example:**
 
 ```typescript
-const states = getStates("United States");
+const states = getStates('United States');
 console.log(states?.length); // 66
 ```
 
@@ -89,7 +89,7 @@ function getCities(
 **Example:**
 
 ```typescript
-const cities = getCities("Nigeria", "Lagos");
+const cities = getCities('Nigeria', 'Lagos');
 console.log(cities); // ['Apapa', 'Ikeja', ...]
 ```
 
@@ -114,7 +114,7 @@ function searchCountries(query: string): Country[];
 **Example:**
 
 ```typescript
-const results = searchCountries("united");
+const results = searchCountries('united');
 // Returns countries with 'united' in their name
 ```
 
@@ -137,7 +137,7 @@ function searchStates(query: string): StateSearchResult[];
 **Example:**
 
 ```typescript
-const results = searchStates("california");
+const results = searchStates('california');
 console.log(results[0].country); // 'United States'
 ```
 
@@ -160,7 +160,7 @@ function searchCities(query: string): CitySearchResult[];
 **Example:**
 
 ```typescript
-const results = searchCities("lagos");
+const results = searchCities('lagos');
 console.log(results[0]);
 // { country: 'Nigeria', state: 'Lagos', city: 'Ikeja' }
 ```

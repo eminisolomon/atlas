@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+.nyc_output
+*.log
+package-lock.json
+docs/.vitepress/cache
+docs/.vitepress/dist
+src/countryData.ts
