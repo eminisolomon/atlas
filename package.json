@@ -43,7 +43,7 @@
   "bugs": {
     "url": "https://github.com/xinnovations/atlas/issues"
   },
-  "homepage": "https://github.com/xinnovations/atlas#readme",
+  "homepage": "https://xinnovations-atlas.vercel.app",
   "author": "Solomon Olatunji (@eminisolomon) - Nigeria",
   "license": "MIT",
   "devDependencies": {
