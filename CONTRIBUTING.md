@@ -74,12 +74,23 @@ export function getCountry(name: string): Country | undefined { ... }
 ```sh
 atlas/
 ├── src/
-│   ├── index.ts              # Main API
-│   ├── interface.ts          # Type definitions
-│   └── countryData.ts        # Data source
+│   ├── lib/              # Core library functions
+│   │   ├── country.ts
+│   │   ├── state.ts
+│   │   ├── city.ts
+│   │   └── index.ts
+│   ├── data/             # Data source
+│   │   ├── countryData.ts
+│   │   └── index.ts
+│   ├── utils/            # Utilities
+│   │   └── index.ts
+│   ├── interfaces/       # Type definitions
+│   │   ├── types.ts
+│   │   └── index.ts
+│   └── index.ts          # Main entry
 ├── test/
-│   └── index.spec.ts         # Tests
-├── docs/                     # VitePress docs
+│   └── index.spec.ts     # Tests
+├── docs/                 # VitePress docs
 ```
 
 ## Code of Conduct
