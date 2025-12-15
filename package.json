@@ -1,6 +1,6 @@
 {
   "name": "@xinnovations/atlas",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A comprehensive world atlas package providing data on countries, states, and cities.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
