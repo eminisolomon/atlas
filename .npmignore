@@ -1,0 +1,16 @@
+src
+test
+examples
+*.ts
+!*.d.ts
+tsconfig.json
+tsconfig.build.json
+.gitignore
+.vscode
+.idea
+*.log
+coverage
+.nyc_output
+verify_package.ts
+download_data.py
+countryData.js
