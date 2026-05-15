@@ -1,7 +1,7 @@
 import type { Country } from '../../interfaces';
 
 export const countryDataChunk08 = [
-{
+  {
     id: 176,
     name: 'Poland',
     currency: 'PLN',
@@ -3231,7 +3231,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 177,
     name: 'Portugal',
     currency: 'EUR',
@@ -4672,14 +4672,14 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 178,
     name: 'Puerto Rico',
     currency: 'USD',
     emoji: '🇵🇷',
     states: [],
   },
-{
+  {
     id: 179,
     name: 'Qatar',
     currency: 'QAR',
@@ -4727,14 +4727,14 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 180,
     name: 'Reunion',
     currency: 'EUR',
     emoji: '🇷🇪',
     states: [],
   },
-{
+  {
     id: 181,
     name: 'Romania',
     currency: 'RON',
@@ -13075,7 +13075,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 182,
     name: 'Russia',
     currency: 'RUB',
@@ -19128,7 +19128,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 183,
     name: 'Rwanda',
     currency: 'RWF',
@@ -19166,14 +19166,14 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 184,
     name: 'Saint Helena',
     currency: 'SHP',
     emoji: '🇸🇭',
     states: [],
   },
-{
+  {
     id: 185,
     name: 'Saint Kitts And Nevis',
     currency: 'XCD',
@@ -19256,7 +19256,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 186,
     name: 'Saint Lucia',
     currency: 'XCD',
@@ -19815,14 +19815,14 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 187,
     name: 'Saint Pierre and Miquelon',
     currency: 'EUR',
     emoji: '🇵🇲',
     states: [],
   },
-{
+  {
     id: 188,
     name: 'Saint Vincent And The Grenadines',
     currency: 'XCD',
@@ -19860,21 +19860,21 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 189,
     name: 'Saint-Barthelemy',
     currency: 'EUR',
     emoji: '🇧🇱',
     states: [],
   },
-{
+  {
     id: 190,
     name: 'Saint-Martin (French part)',
     currency: 'EUR',
     emoji: '🇲🇫',
     states: [],
   },
-{
+  {
     id: 191,
     name: 'Samoa',
     currency: 'WST',
@@ -19937,7 +19937,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 192,
     name: 'San Marino',
     currency: 'EUR',
@@ -19990,7 +19990,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 193,
     name: 'Sao Tome and Principe',
     currency: 'STD',
@@ -20008,7 +20008,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 194,
     name: 'Saudi Arabia',
     currency: 'SAR',
@@ -20639,7 +20639,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 195,
     name: 'Senegal',
     currency: 'XOF',
@@ -20774,7 +20774,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 196,
     name: 'Serbia',
     currency: 'RSD',
@@ -21248,7 +21248,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 197,
     name: 'Seychelles',
     currency: 'SCR',
@@ -21376,7 +21376,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 198,
     name: 'Sierra Leone',
     currency: 'SLL',
@@ -21493,7 +21493,7 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 199,
     name: 'Singapore',
     currency: 'SGD',
@@ -21526,11 +21526,11 @@ export const countryDataChunk08 = [
       },
     ],
   },
-{
+  {
     id: 250,
     name: 'Sint Maarten (Dutch part)',
     currency: 'ANG',
     emoji: '🇸🇽',
     states: [],
-  }
+  },
 ] satisfies readonly Country[];

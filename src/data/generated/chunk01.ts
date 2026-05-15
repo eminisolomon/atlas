@@ -1,7 +1,7 @@
 import type { Country } from '../../interfaces';
 
 export const countryDataChunk01 = [
-{
+  {
     id: 1,
     name: 'Afghanistan',
     currency: 'AFN',
@@ -225,14 +225,14 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 2,
     name: 'Aland Islands',
     currency: 'EUR',
     emoji: '🇦🇽',
     states: [],
   },
-{
+  {
     id: 3,
     name: 'Albania',
     currency: 'ALL',
@@ -616,7 +616,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 4,
     name: 'Algeria',
     currency: 'DZD',
@@ -1168,14 +1168,14 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 5,
     name: 'American Samoa',
     currency: 'USD',
     emoji: '🇦🇸',
     states: [],
   },
-{
+  {
     id: 6,
     name: 'Andorra',
     currency: 'EUR',
@@ -1218,7 +1218,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 7,
     name: 'Angola',
     currency: 'AOA',
@@ -1325,21 +1325,21 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 8,
     name: 'Anguilla',
     currency: 'XCD',
     emoji: '🇦🇮',
     states: [],
   },
-{
+  {
     id: 9,
     name: 'Antarctica',
     currency: 'AAD',
     emoji: '🇦🇶',
     states: [],
   },
-{
+  {
     id: 10,
     name: 'Antigua And Barbuda',
     currency: 'XCD',
@@ -1387,7 +1387,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 11,
     name: 'Argentina',
     currency: 'ARS',
@@ -2497,7 +2497,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 12,
     name: 'Armenia',
     currency: 'AMD',
@@ -2879,14 +2879,14 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 13,
     name: 'Aruba',
     currency: 'AWG',
     emoji: '🇦🇼',
     states: [],
   },
-{
+  {
     id: 14,
     name: 'Australia',
     currency: 'AUD',
@@ -7094,7 +7094,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 15,
     name: 'Austria',
     currency: 'EUR',
@@ -9517,7 +9517,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 16,
     name: 'Azerbaijan',
     currency: 'AZN',
@@ -9976,7 +9976,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 18,
     name: 'Bahrain',
     currency: 'BHD',
@@ -10009,7 +10009,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 19,
     name: 'Bangladesh',
     currency: 'BDT',
@@ -10516,7 +10516,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 20,
     name: 'Barbados',
     currency: 'BBD',
@@ -10579,7 +10579,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 21,
     name: 'Belarus',
     currency: 'BYN',
@@ -10958,7 +10958,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 22,
     name: 'Belgium',
     currency: 'EUR',
@@ -11582,7 +11582,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 23,
     name: 'Belize',
     currency: 'BZD',
@@ -11625,7 +11625,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 24,
     name: 'Benin',
     currency: 'XOF',
@@ -11693,7 +11693,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 25,
     name: 'Bermuda',
     currency: 'BMD',
@@ -11746,7 +11746,7 @@ export const countryDataChunk01 = [
       },
     ],
   },
-{
+  {
     id: 26,
     name: 'Bhutan',
     currency: 'BTN',
@@ -11848,5 +11848,5 @@ export const countryDataChunk01 = [
         cities: ['Panbang', 'Shemgang'],
       },
     ],
-  }
+  },
 ] satisfies readonly Country[];

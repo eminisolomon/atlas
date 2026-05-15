@@ -1,7 +1,7 @@
 import type { Country } from '../../interfaces';
 
 export const countryDataChunk09 = [
-{
+  {
     id: 200,
     name: 'Slovakia',
     currency: 'EUR',
@@ -290,7 +290,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 201,
     name: 'Slovenia',
     currency: 'EUR',
@@ -1407,7 +1407,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 202,
     name: 'Solomon Islands',
     currency: 'SBD',
@@ -1465,7 +1465,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 203,
     name: 'Somalia',
     currency: 'SOS',
@@ -1561,7 +1561,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 204,
     name: 'South Africa',
     currency: 'ZAR',
@@ -1937,14 +1937,14 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 205,
     name: 'South Georgia',
     currency: 'GBP',
     emoji: '🇬🇸',
     states: [],
   },
-{
+  {
     id: 116,
     name: 'South Korea',
     currency: 'KRW',
@@ -2340,7 +2340,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 206,
     name: 'South Sudan',
     currency: 'SSP',
@@ -2398,7 +2398,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 207,
     name: 'Spain',
     currency: 'EUR',
@@ -9251,7 +9251,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 208,
     name: 'Sri Lanka',
     currency: 'LKR',
@@ -9582,7 +9582,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 209,
     name: 'Sudan',
     currency: 'SDG',
@@ -9720,7 +9720,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 210,
     name: 'Suriname',
     currency: 'SRD',
@@ -9778,14 +9778,14 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 211,
     name: 'Svalbard And Jan Mayen Islands',
     currency: 'NOK',
     emoji: '🇸🇯',
     states: [],
   },
-{
+  {
     id: 212,
     name: 'Swaziland',
     currency: 'SZL',
@@ -9851,7 +9851,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 213,
     name: 'Sweden',
     currency: 'SEK',
@@ -10773,7 +10773,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 214,
     name: 'Switzerland',
     currency: 'CHF',
@@ -12434,7 +12434,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 215,
     name: 'Syria',
     currency: 'SYP',
@@ -12664,7 +12664,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 216,
     name: 'Taiwan',
     currency: 'TWD',
@@ -12782,7 +12782,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 217,
     name: 'Tajikistan',
     currency: 'TJS',
@@ -12879,7 +12879,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 218,
     name: 'Tanzania',
     currency: 'TZS',
@@ -13334,7 +13334,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 219,
     name: 'Thailand',
     currency: 'THB',
@@ -15049,7 +15049,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 17,
     name: 'The Bahamas',
     currency: 'BSD',
@@ -15267,7 +15267,7 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 220,
     name: 'Togo',
     currency: 'XOF',
@@ -15308,14 +15308,14 @@ export const countryDataChunk09 = [
       },
     ],
   },
-{
+  {
     id: 221,
     name: 'Tokelau',
     currency: 'NZD',
     emoji: '🇹🇰',
     states: [],
   },
-{
+  {
     id: 222,
     name: 'Tonga',
     currency: 'TOP',
@@ -15347,5 +15347,5 @@ export const countryDataChunk09 = [
         cities: ['Neiafu'],
       },
     ],
-  }
+  },
 ] satisfies readonly Country[];

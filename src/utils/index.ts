@@ -33,7 +33,11 @@ function getSubsequencePenalty(value: string, query: string): number {
     valueIndex += 1;
   }
 
-  if (queryIndex !== query.length || firstMatchIndex === -1 || lastMatchIndex === -1) {
+  if (
+    queryIndex !== query.length ||
+    firstMatchIndex === -1 ||
+    lastMatchIndex === -1
+  ) {
     return -1;
   }
 

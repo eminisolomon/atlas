@@ -25,7 +25,13 @@ pnpm add @xinnovations/atlas
 ### Import the Library
 
 ```typescript
-import { getCountries, getCountry, getState, getStates, getCities } from '@xinnovations/atlas';
+import {
+  getCountries,
+  getCountry,
+  getState,
+  getStates,
+  getCities,
+} from '@xinnovations/atlas';
 ```
 
 ### Get All Countries

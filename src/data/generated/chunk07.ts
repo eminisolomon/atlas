@@ -1,7 +1,7 @@
 import type { Country } from '../../interfaces';
 
 export const countryDataChunk07 = [
-{
+  {
     id: 151,
     name: 'Myanmar',
     currency: 'MMK',
@@ -140,7 +140,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 152,
     name: 'Namibia',
     currency: 'NAD',
@@ -250,7 +250,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 153,
     name: 'Nauru',
     currency: 'AUD',
@@ -328,7 +328,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 154,
     name: 'Nepal',
     currency: 'NPR',
@@ -491,7 +491,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 156,
     name: 'Netherlands',
     currency: 'EUR',
@@ -2326,14 +2326,14 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 157,
     name: 'New Caledonia',
     currency: 'XPF',
     emoji: '🇳🇨',
     states: [],
   },
-{
+  {
     id: 158,
     name: 'New Zealand',
     currency: 'NZD',
@@ -2583,7 +2583,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 159,
     name: 'Nicaragua',
     currency: 'NIO',
@@ -2843,7 +2843,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 160,
     name: 'Niger',
     currency: 'XOF',
@@ -2963,7 +2963,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 161,
     name: 'Nigeria',
     currency: 'NGN',
@@ -3134,7 +3134,7 @@ export const countryDataChunk07 = [
           'Giade',
           'Gwaram',
           'Itas',
-          'Jama\'are',
+          "Jama'are",
           'Kafin Madaki',
           'Kari',
           'Katagum',
@@ -3562,7 +3562,7 @@ export const countryDataChunk07 = [
           'Mashi',
           'Kurfi',
           'Kusada',
-          'Mai\'Adua',
+          "Mai'Adua",
           'Malumfashi',
           'Mani',
           'Matazu',
@@ -3938,7 +3938,7 @@ export const countryDataChunk07 = [
           'Mikang',
           'Pankshin',
           'Panyam',
-          'Qua\'an Pan',
+          "Qua'an Pan",
           'Riyom',
           'Shendam',
           'Vom',
@@ -4089,21 +4089,21 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 162,
     name: 'Niue',
     currency: 'NZD',
     emoji: '🇳🇺',
     states: [],
   },
-{
+  {
     id: 163,
     name: 'Norfolk Island',
     currency: 'AUD',
     emoji: '🇳🇫',
     states: [],
   },
-{
+  {
     id: 115,
     name: 'North Korea',
     currency: 'KPW',
@@ -4238,14 +4238,14 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 164,
     name: 'Northern Mariana Islands',
     currency: 'USD',
     emoji: '🇲🇵',
     states: [],
   },
-{
+  {
     id: 165,
     name: 'Norway',
     currency: 'NOK',
@@ -5040,7 +5040,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 166,
     name: 'Oman',
     currency: 'OMR',
@@ -5132,7 +5132,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 167,
     name: 'Pakistan',
     currency: 'PKR',
@@ -5640,7 +5640,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 168,
     name: 'Palau',
     currency: 'USD',
@@ -5728,14 +5728,14 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 169,
     name: 'Palestinian Territory Occupied',
     currency: 'ILS',
     emoji: '🇵🇸',
     states: [],
   },
-{
+  {
     id: 170,
     name: 'Panama',
     currency: 'PAB',
@@ -6421,7 +6421,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 171,
     name: 'Papua new Guinea',
     currency: 'PGK',
@@ -6615,7 +6615,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 172,
     name: 'Paraguay',
     currency: 'PYG',
@@ -6842,7 +6842,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 173,
     name: 'Peru',
     currency: 'PEN',
@@ -7481,7 +7481,7 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 174,
     name: 'Philippines',
     currency: 'PHP',
@@ -14521,11 +14521,11 @@ export const countryDataChunk07 = [
       },
     ],
   },
-{
+  {
     id: 175,
     name: 'Pitcairn Island',
     currency: 'NZD',
     emoji: '🇵🇳',
     states: [],
-  }
+  },
 ] satisfies readonly Country[];
