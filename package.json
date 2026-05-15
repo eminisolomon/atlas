@@ -1,6 +1,6 @@
 {
   "name": "@xinnovations/atlas",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A comprehensive world atlas package providing data on countries, states, and cities.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "dev": "tsc -p tsconfig.build.json --watch",
-    "test": "npm run build && mocha -r ts-node/register test/**/*.spec.ts",
+    "test": "npm run build && tsc -p tsconfig.test.json && mocha \".test-dist/test/**/*.spec.js\"",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
@@ -48,14 +48,14 @@
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^5.2.3",
-    "@types/mocha": "^10.0.6",
-    "@types/node": "^20.10.0",
-    "assert": "^1.4.1",
-    "chai": "^4.5.0",
-    "mocha": "^10.2.0",
-    "prettier": "^3.7.4",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.8.0",
+    "assert": "^2.1.0",
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "prettier": "^3.8.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3",
+    "typescript": "^6.0.3",
     "vitepress": "^1.6.4"
   }
 }

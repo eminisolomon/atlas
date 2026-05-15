@@ -25,7 +25,7 @@ pnpm add @xinnovations/atlas
 ### Import the Library
 
 ```typescript
-import { getCountries, getStates, getCities } from '@xinnovations/atlas';
+import { getCountries, getCountry, getState, getStates, getCities } from '@xinnovations/atlas';
 ```
 
 ### Get All Countries
@@ -51,6 +51,13 @@ const states = getStates('United States');
 console.log(states?.length); // 66
 ```
 
+### Get a Specific State
+
+```typescript
+const lagos = getState('Nigeria', 'Lagos');
+console.log(lagos?.cities.length);
+```
+
 ### Get Cities for a State
 
 ```typescript
@@ -68,6 +75,13 @@ import { searchCountries } from '@xinnovations/atlas';
 const results = searchCountries('united');
 console.log(results.map(c => c.name));
 // ['United Arab Emirates', 'United Kingdom', 'United States', ...]
+```
+
+Search is accent-insensitive and ranked, so approximate queries work too:
+
+```typescript
+const results = searchCities('wakhan');
+console.log(results[0]?.city); // 'Wākhān'
 ```
 
 ### Search States
@@ -98,7 +112,7 @@ The library is written in TypeScript and provides full type definitions:
 import type { Country, State, CitySearchResult } from '@xinnovations/atlas';
 
 const country: Country | undefined = getCountry('Canada');
-const cities: string[] | undefined = getCities('Nigeria', 'Lagos');
+const cities: readonly string[] | undefined = getCities('Nigeria', 'Lagos');
 ```
 
 ## Next Steps

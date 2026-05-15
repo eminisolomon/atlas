@@ -94,9 +94,9 @@ import { useState, useEffect } from 'react';
 import { getCountries, getStates, type Country } from '@xinnovations/atlas';
 
 function CountrySelector() {
-  const [countries, setCountries] = useState<Country[]>([]);
+  const [countries, setCountries] = useState<readonly Country[]>([]);
   const [selectedCountry, setSelectedCountry] = useState<string>('');
-  const [states, setStates] = useState<string[]>([]);
+  const [states, setStates] = useState<readonly string[]>([]);
 
   useEffect(() => {
     setCountries(getCountries());
@@ -164,7 +164,7 @@ function CountrySelector() {
 import { ref, computed, onMounted } from 'vue';
 import { getCountries, getStates, type Country } from '@xinnovations/atlas';
 
-const countries = ref<Country[]>([]);
+const countries = ref<readonly Country[]>([]);
 const selectedCountry = ref('');
 
 const states = computed(() => {

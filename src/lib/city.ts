@@ -1,6 +1,6 @@
 import { locationData } from '../data';
-import { Country, CitySearchResult } from '../interfaces';
-import { normalize } from '../utils';
+import { CitySearchResult } from '../interfaces';
+import { getSearchScore } from '../utils';
 import { getState } from './state';
 
 /**
@@ -12,7 +12,7 @@ import { getState } from './state';
 export function getCities(
   countryName: string,
   stateName: string
-): string[] | undefined {
+): readonly string[] | undefined {
   const state = getState(countryName, stateName);
   return state?.cities;
 }
@@ -23,23 +23,32 @@ export function getCities(
  * @returns Array of results with country and state info
  */
 export function searchCities(query: string): CitySearchResult[] {
-  if (!query) return [];
-  const normalizedQuery = normalize(query);
-  const results: CitySearchResult[] = [];
+  const results: Array<CitySearchResult & { score: number }> = [];
 
-  (locationData as Country[]).forEach(country => {
+  locationData.forEach(country => {
     country.states.forEach(state => {
       state.cities.forEach(city => {
-        if (normalize(city).includes(normalizedQuery)) {
+        const score = getSearchScore(city, query);
+
+        if (score !== -1) {
           results.push({
             country: country.name,
             state: state.name,
             city,
+            score,
           });
         }
       });
     });
   });
 
-  return results;
+  return results
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        left.city.localeCompare(right.city) ||
+        left.state.localeCompare(right.state) ||
+        left.country.localeCompare(right.country)
+    )
+    .map(({ score: _score, ...result }) => result);
 }

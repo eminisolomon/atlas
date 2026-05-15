@@ -1,13 +1,13 @@
 import { locationData } from '../data';
 import { Country } from '../interfaces';
-import { normalize } from '../utils';
+import { getSearchScore, normalize } from '../utils';
 
 /**
  * Get all countries with their data
  * @returns Array of all countries
  */
-export function getCountries(): Country[] {
-  return locationData as Country[];
+export function getCountries(): readonly Country[] {
+  return locationData;
 }
 
 /**
@@ -17,9 +17,7 @@ export function getCountries(): Country[] {
  */
 export function getCountry(name: string): Country | undefined {
   const normalizedName = normalize(name);
-  return (locationData as Country[]).find(
-    c => normalize(c.name) === normalizedName
-  );
+  return locationData.find(c => normalize(c.name) === normalizedName);
 }
 
 /**
@@ -28,9 +26,16 @@ export function getCountry(name: string): Country | undefined {
  * @returns Array of matching countries
  */
 export function searchCountries(query: string): Country[] {
-  if (!query) return [];
-  const normalizedQuery = normalize(query);
-  return (locationData as Country[]).filter(c =>
-    normalize(c.name).includes(normalizedQuery)
-  );
+  return locationData
+    .map(country => ({
+      country,
+      score: getSearchScore(country.name, query),
+    }))
+    .filter(match => match.score !== -1)
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        left.country.name.localeCompare(right.country.name)
+    )
+    .map(match => match.country);
 }

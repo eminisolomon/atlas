@@ -31,7 +31,7 @@ features:
 
   - icon: 🔍
     title: Powerful Search
-    details: Find locations by country, state, or city with fuzzy search capabilities
+    details: Find locations by country, state, or city with accent-insensitive ranked matching
 
   - icon: 💱
     title: Currency & Emoji
@@ -93,7 +93,7 @@ pnpm add @xinnovations/atlas
 - Country queries and searches
 - State lookups
 - City searches
-- Fuzzy search capabilities
+- Accent-insensitive ranked search
 
 ## License
 

@@ -7,7 +7,7 @@
 Get all countries with their complete data.
 
 ```typescript
-function getCountries(): Country[];
+function getCountries(): readonly Country[];
 ```
 
 **Returns:** Array of all countries
@@ -50,7 +50,7 @@ console.log(nigeria?.emoji); // '🇳🇬'
 Get all states/provinces for a specific country.
 
 ```typescript
-function getStates(countryName: string): State[] | undefined;
+function getStates(countryName: string): readonly State[] | undefined;
 ```
 
 **Parameters:**
@@ -68,6 +68,30 @@ console.log(states?.length); // 66
 
 ---
 
+### getState(countryName, stateName)
+
+Get a specific state/province from a country.
+
+```typescript
+function getState(countryName: string, stateName: string): State | undefined;
+```
+
+**Parameters:**
+
+- `countryName` - Name of the country
+- `stateName` - Name of the state
+
+**Returns:** State object or undefined if not found
+
+**Example:**
+
+```typescript
+const lagos = getState('Nigeria', 'Lagos');
+console.log(lagos?.cities.includes('Ikeja')); // true
+```
+
+---
+
 ### getCities(countryName, stateName)
 
 Get cities for a specific state in a country.
@@ -76,7 +100,7 @@ Get cities for a specific state in a country.
 function getCities(
   countryName: string,
   stateName: string
-): string[] | undefined;
+): readonly string[] | undefined;
 ```
 
 **Parameters:**
@@ -99,7 +123,7 @@ console.log(cities); // ['Apapa', 'Ikeja', ...]
 
 ### searchCountries(query)
 
-Search for countries by name (fuzzy search).
+Search for countries by name with accent-insensitive ranked matching.
 
 ```typescript
 function searchCountries(query: string): Country[];
@@ -116,6 +140,11 @@ function searchCountries(query: string): Country[];
 ```typescript
 const results = searchCountries('united');
 // Returns countries with 'united' in their name
+```
+
+```typescript
+const fuzzyResults = searchCountries('untd');
+console.log(fuzzyResults.some(country => country.name === 'United States')); // true
 ```
 
 ---
@@ -173,11 +202,11 @@ console.log(results[0]);
 
 ```typescript
 interface Country {
-  id: number;
-  name: string;
-  currency: string;
-  emoji: string;
-  states: State[];
+  readonly id: number;
+  readonly name: string;
+  readonly currency: string;
+  readonly emoji: string;
+  readonly states: readonly State[];
 }
 ```
 
@@ -185,9 +214,9 @@ interface Country {
 
 ```typescript
 interface State {
-  id: number;
-  name: string;
-  cities: string[];
+  readonly id: number;
+  readonly name: string;
+  readonly cities: readonly string[];
 }
 ```
 
@@ -195,9 +224,9 @@ interface State {
 
 ```typescript
 interface CitySearchResult {
-  country: string;
-  state: string;
-  city: string;
+  readonly country: string;
+  readonly state: string;
+  readonly city: string;
 }
 ```
 
@@ -205,7 +234,7 @@ interface CitySearchResult {
 
 ```typescript
 interface StateSearchResult {
-  country: string;
-  state: State;
+  readonly country: string;
+  readonly state: State;
 }
 ```

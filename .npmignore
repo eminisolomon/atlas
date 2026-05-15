@@ -11,6 +11,7 @@ tsconfig.build.json
 *.log
 coverage
 .nyc_output
+.test-dist
 verify_package.ts
 download_data.py
 countryData.js

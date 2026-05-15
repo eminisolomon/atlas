@@ -10,7 +10,7 @@
 - 🎯 **TypeScript First** - Full type safety with comprehensive type definitions
 - 📦 **Zero Dependencies** - Lightweight and fast
 - 🌍 **Global Data** - Countries, states, and cities worldwide
-- 🔍 **Powerful Search** - Find locations by fuzzy search
+- 🔍 **Powerful Search** - Find locations with accent-insensitive ranked matching
 - ✅ **Well Tested** - Verified reliability
 
 ## Installation
@@ -41,11 +41,27 @@ console.log(results);
 
 ### Core Functions
 
-`getCountries()` · `getCountry(name)` · `getStates(country)` · `getCities(country, state)`
+`getCountries()` · `getCountry(name)` · `getStates(country)` · `getState(country, state)` · `getCities(country, state)`
 
 ### Search Functions
 
 `searchCountries(query)` · `searchStates(query)` · `searchCities(query)`
+
+## Data Coverage
+
+- Countries: `250`
+- States / provinces / territories: `4,964`
+- Cities / towns / populated places: `148,512`
+
+Coverage is broad, but it is not exhaustive and it should not be treated as official administrative data. If you find gaps or bad assignments, open an issue or send a PR with a source.
+
+## Data Sources
+
+This package is assembled from public geographic datasets and curated fixes, including:
+
+- GeoNames data exports: <https://www.geonames.org/export/>
+- official administrative listings where available
+- election and local government office directories used for spot verification
 
 ## Documentation
 

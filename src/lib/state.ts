@@ -1,6 +1,6 @@
 import { locationData } from '../data';
-import { Country, State, StateSearchResult } from '../interfaces';
-import { normalize } from '../utils';
+import { State, StateSearchResult } from '../interfaces';
+import { getSearchScore, normalize } from '../utils';
 import { getCountry } from './country';
 
 /**
@@ -8,7 +8,7 @@ import { getCountry } from './country';
  * @param countryName - Name of the country
  * @returns Array of states or undefined if country not found
  */
-export function getStates(countryName: string): State[] | undefined {
+export function getStates(countryName: string): readonly State[] | undefined {
   const country = getCountry(countryName);
   return country?.states;
 }
@@ -36,20 +36,28 @@ export function getState(
  * @returns Array of results with country info
  */
 export function searchStates(query: string): StateSearchResult[] {
-  if (!query) return [];
-  const normalizedQuery = normalize(query);
-  const results: StateSearchResult[] = [];
+  const results: Array<StateSearchResult & { score: number }> = [];
 
-  (locationData as Country[]).forEach(country => {
+  locationData.forEach(country => {
     country.states.forEach(state => {
-      if (normalize(state.name).includes(normalizedQuery)) {
+      const score = getSearchScore(state.name, query);
+
+      if (score !== -1) {
         results.push({
           country: country.name,
           state,
+          score,
         });
       }
     });
   });
 
-  return results;
+  return results
+    .sort(
+      (left, right) =>
+        right.score - left.score ||
+        left.state.name.localeCompare(right.state.name) ||
+        left.country.localeCompare(right.country)
+    )
+    .map(({ score: _score, ...result }) => result);
 }
